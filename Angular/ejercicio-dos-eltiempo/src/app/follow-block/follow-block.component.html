@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="container__text">
+        <h2>Síguenos</h2>
+    </div>
+    <div class="container__follow">
+       <div *ngFor="let social of _data">
+        <div class="icono"> 
+            <a href={{social.href}}><img class="image"  src={{social.url}} alt="foto"></a>
+        </div>
+       </div>
+    </div>
+</div>
