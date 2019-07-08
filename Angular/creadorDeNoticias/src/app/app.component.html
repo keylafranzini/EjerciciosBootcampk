@@ -4,12 +4,11 @@
     <div class="col-4">
       <app-form-noticia (escucharCreacionNuevaNoticia)="anadirNoticia($event)"></app-form-noticia>
     </div>
-    <div class="col-8">
-      <app-noticia></app-noticia>
-      <app-noticia></app-noticia>
-      <app-noticia></app-noticia>
-      <app-noticia></app-noticia>
-      <app-noticia></app-noticia>
+    <div class="col-8" *ngFor="let noticia of _data">
+      <app-noticia>
+  
+      </app-noticia>
+      
     </div>
 
   </div>
