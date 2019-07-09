@@ -5,6 +5,7 @@ import { Component, Input} from '@angular/core';
   templateUrl: './faqs-item.component.html',
   styleUrls: ['./faqs-item.component.sass']
 })
+
 export class FaqsItemComponent {
   // VARIABLES
   public opened: boolean = false;
@@ -14,7 +15,9 @@ export class FaqsItemComponent {
   @Input() body: string = "ERROR: Body";
 
   // CONSTRUCTOR
-  constructor() { }
+  constructor() {
+
+   }
 
   //METODOS PRIVADOS
 
@@ -32,7 +35,6 @@ export class FaqsItemComponent {
     this.opened = !this.opened;
   }
   
-
 }
 
 

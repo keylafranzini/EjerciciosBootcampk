@@ -1,4 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
+export interface Noticia { 
+  title: string;
+  body: string; 
+}
 
 @Component({
   selector: 'app-noticia',
@@ -7,8 +11,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class NoticiaComponent implements OnInit {
 
-  @Input() title : string = 'Cargando';
-  @Input() body : string = 'Cargando';
+  @Input() title : string = null;
+  @Input() body : string = null;
 
   constructor() { }
 

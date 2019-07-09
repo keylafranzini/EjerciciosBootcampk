@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-noticia-otra',
@@ -7,13 +7,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class NoticiaOtraComponent implements OnInit {
 
-  public _data: Noticia[] = []
+  public noticias: Noticia[] = [];
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  anadirNoticia(noticia: Noticia){
+    this.noticias.push(noticia);
+  }
 }
 
 interface Noticia {

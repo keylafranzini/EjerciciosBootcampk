@@ -5,7 +5,9 @@
       <app-form-noticia (escucharCreacionNuevaNoticia)="anadirNoticia($event)"></app-form-noticia>
     </div>
     <div class="col-8">
-      <app-noticia-otra *ngFor="let noticia of data" [title]="noticia.title" [body]="noticia.body"></app-noticia-otra>
+      <ul *ngFor="let noticia of noticias">
+          <app-noticia [title]="noticia.title" [body]="noticia.body"></app-noticia>
+      </ul>
       
     </div>
 
