@@ -7,15 +7,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class NoticiaOtraComponent implements OnInit {
 
-  public _data = [];
-
-  @Input() noticias: Array<any> = [];
-  @Input() title : string = 'Cargando';
-  @Input() body : string = 'Cargando';
+  public _data: Noticia[] = []
 
   constructor() { }
 
   ngOnInit() {
   }
 
+}
+
+interface Noticia {
+  title: string;
+  body: string;
 }

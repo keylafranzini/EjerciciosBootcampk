@@ -1,15 +1,13 @@
 <div class="container">
-    <div class="row">
-  
-      <div class="col-4">
-        <app-form-noticia (escucharCreacionNuevaNoticia)="anadirNoticia($event)"></app-form-noticia>
-      </div>
-      <div class="col-8" *ngFor="let noticia of _data">
-        <app-noticia>
-    
-        </app-noticia>
-        
-      </div>
-  
+  <div class="row">
+
+    <div class="col-4">
+      <app-form-noticia (escucharCreacionNuevaNoticia)="anadirNoticia($event)"></app-form-noticia>
     </div>
+    <div class="col-8">
+      <app-noticia-otra *ngFor="let noticia of data" [title]="noticia.title" [body]="noticia.body"></app-noticia-otra>
+      
+    </div>
+
   </div>
+</div>
