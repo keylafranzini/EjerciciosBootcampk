@@ -1,0 +1,11 @@
+<button (click)="goTo('prev')">
+    <i class="fas fa-angle-left"></i> 
+</button>
+<button (click)="goTo('next')">
+    <i class="fas fa-angle-right"></i> 
+</button>
+
+<div *ngFor="let tab of tabs">
+    <button (click)="changeTab()"> {{ tab.title }} </button>
+    <app-tab [body]="tab.body"></app-tab>
+</div>
