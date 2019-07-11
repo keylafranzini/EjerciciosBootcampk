@@ -1,0 +1,23 @@
+<div class="app-tab-header">
+    <div class="app-tab-header__header">
+        <div class="app-tab-links">
+            <ul class="app-tab-link" >
+                <li class="link" (click) = "clickOn()">{{title}}</li>
+                
+            </ul>
+        </div>
+        <div class="app-tab-icon">
+            <span><i class="fas fa-angle-left"></i></span>
+            <span><i class="fas fa-angle-right"></i></span>
+        </div>
+        
+    </div>
+   
+</div>
+
+<div class="app-tab-header__parraf">
+    <p class="parraf hidden" [ngClass]="{'hidden--opened': opened}">{{body}}</p>
+</div>
+
+
+
