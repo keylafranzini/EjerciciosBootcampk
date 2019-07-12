@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { discs } from '../../../assets/mocks/discs';
-import { IDiscs } from '../../core/models/discs.interface';
+import { IDisc } from '../../core/models/discs.interface';
 
 @Component({
   selector: 'app-discs',
@@ -9,7 +9,7 @@ import { IDiscs } from '../../core/models/discs.interface';
 })
 export class DiscsComponent implements OnInit {
 
-  public discs: IDiscs[];
+  public discs: IDisc[];
 
   constructor() {
     this.discs = discs;

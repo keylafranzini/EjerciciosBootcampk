@@ -21,7 +21,7 @@
     <div class="games-section__content" *ngFor="let game of games; let i = index;">
 
         <h3>
-            <a routerLink="/Games/{{ i }}">{{ game.console }}</a>
+            <a routerLink="/game/{{ i }}">{{ game.console }}</a>
         </h3>
 
         <p>{{ game.game }}</p>

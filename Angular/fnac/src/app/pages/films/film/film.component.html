@@ -1,31 +1,31 @@
 <div class="film-component">
-        <h1 class="title">
-            <a class="link1" routerLink="/home">FNAC</a>
-        </h1>
-    <div class="film-component__buttons">
+  <h1 class="title">
+    <a class="link1" routerLink="/home">FNAC</a>
+  </h1>
+  <div class="film-component__buttons">
 
-        <h2 class="home-component-text">
-            <button class="button"><a class="link" routerLink="/films">Films</a></button>
-        </h2>
-        <h2 class="home-component-text">
-            <button class="button"><a class="link" routerLink="/games">Games</a></button>
-        </h2 >
-        <h2 class="home-component-text">
-            <button class="button"><a class="link" routerLink="/discs">Discs</a></button>
-        </h2>
+    <h2 class="home-component-text">
+      <button class="button"><a class="link" routerLink="/films">Films</a></button>
+    </h2>
+    <h2 class="home-component-text">
+      <button class="button"><a class="link" routerLink="/games">Games</a></button>
+    </h2>
+    <h2 class="home-component-text">
+      <button class="button"><a class="link" routerLink="/discs">Discs</a></button>
+    </h2>
+  </div>
+  <section class="film-section" *ngIf="film">
+    <div class="film-section__content">
+      <h3>{{ film.title }}</h3>
+
+      <p>{{ film.director }}</p>
+
+      <p>{{ film.duration }}</p>
+
+      <p>{{ film.year }}</p>
+
+      <p>{{ film.actors }}</p>
     </div>
-        <section class="film-section" *ngIf="film">
-            <div class="film-section__content">
-                <h3>{{ film.title }}</h3>
+  </section>
 
-                <p>{{ film.director }}</p>
-
-                <p>{{ film.duration }}</p>
-
-                <p>{{ film.year }}</p>
-
-                <p>{{ film.actors }}</p>
-            </div>
-        </section>
-    
 </div>

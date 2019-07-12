@@ -1,29 +1,29 @@
 <div class="films-component">
-        <h1 class="title">
-            <a class="link1" routerLink="/home">FNAC</a>
-        </h1>
-    <div class="films-component__buttons">
+  <h1 class="title">
+    <a class="link1" routerLink="/home">FNAC</a>
+  </h1>
+  <div class="films-component__buttons">
 
-        <h2 class="home-component-text">
-            <button class="button"><a class="link" routerLink="/films">Films</a></button>
-        </h2>
+    <h2 class="home-component-text">
+      <button class="button"><a class="link" routerLink="/films">Films</a></button>
+    </h2>
 
-        <h2 class="home-component-text">
-            <button class="button"><a class="link" routerLink="/games">Games</a></button>
-        </h2>
+    <h2 class="home-component-text">
+      <button class="button"><a class="link" routerLink="/games">Games</a></button>
+    </h2>
 
-        <h2 class="home-component-text">
-            <button class="button"><a class="link" routerLink="/discs">Discs</a></button>
-        </h2>
-    </div>
+    <h2 class="home-component-text">
+      <button class="button"><a class="link" routerLink="/discs">Discs</a></button>
+    </h2>
+  </div>
 
-    <section class="films-section">
+  <section class="films-section">
     <div class="films-section__content" *ngFor="let film of films; let i = index;">
 
-        <h3>
-            <a routerLink="/films/{{ i }}">{{ film.title }}</a>
-        </h3>
-        
+      <h3>
+        <a routerLink="/films/{{ i }}">{{ film.title }}</a>
+      </h3>
+
     </div>
-    </section>
+  </section>
 </div>

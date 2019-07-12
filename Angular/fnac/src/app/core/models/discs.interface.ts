@@ -1,4 +1,4 @@
-export interface IDiscs {
+export interface IDisc {
     singer: string;
     year: number;
     songs: string[];

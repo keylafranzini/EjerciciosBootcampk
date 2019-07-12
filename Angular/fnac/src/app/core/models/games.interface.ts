@@ -1,4 +1,4 @@
 export interface IGames {
-    console: string;
-    game: number;
+  console: string;
+  game: number;
 }

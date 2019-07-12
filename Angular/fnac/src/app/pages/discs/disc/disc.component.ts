@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { discs } from '../../../../assets/mocks/discs';
-import { IDiscs } from '../../../core/models/discs.interface';
-import { disc } from '../../..//discs/disc';
+import { IDisc } from '../../../core/models/discs.interface';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -11,9 +10,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DiscComponent implements OnInit {
 
-  public disc: IDiscs[];
+  public disc: IDisc;
 
-  constructor(private route: ActivatedRoute) { 
+  constructor(private route: ActivatedRoute) {
     this.route.params.subscribe(params => {
       console.log(params);
       if (params && params.id) {
