@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { ITab } from '../core/interfaces/ITabs';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tabs',
@@ -8,21 +7,9 @@ import { ITab } from '../core/interfaces/ITabs';
 })
 export class TabsComponent implements OnInit {
 
-  @Input() tabs: ITab[];
-
-
-
   constructor() { }
 
   ngOnInit() {
   }
 
-  changeTab(){
-
-  }
-
-  goTo(){
-
-  }
-  
 }

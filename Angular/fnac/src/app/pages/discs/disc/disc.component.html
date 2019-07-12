@@ -1,29 +1,27 @@
-<div class="films-component">
+<div class="disc-component">
         <h1 class="title">
             <a class="link1" routerLink="/home">FNAC</a>
         </h1>
-    <div class="films-component__buttons">
+    <div class="disc-component__buttons">
 
         <h2 class="home-component-text">
             <button class="button"><a class="link" routerLink="/films">Films</a></button>
         </h2>
-
         <h2 class="home-component-text">
             <button class="button"><a class="link" routerLink="/games">Games</a></button>
-        </h2>
-
+        </h2 >
         <h2 class="home-component-text">
             <button class="button"><a class="link" routerLink="/discs">Discs</a></button>
         </h2>
     </div>
+        <section class="disc-section" *ngIf="disc">
+            <div class="disc-section__content">
+                <h3>{{ disc.singer }}</h3>
 
-    <section class="films-section">
-    <div class="films-section__content" *ngFor="let film of films; let i = index;">
+                <p>{{ disc.year }}</p>
 
-        <h3>
-            <a routerLink="/films/{{ i }}">{{ film.title }}</a>
-        </h3>
-        
-    </div>
-    </section>
+                <p>{{ disc.songs }}</p>
+            </div>
+        </section>
+    
 </div>

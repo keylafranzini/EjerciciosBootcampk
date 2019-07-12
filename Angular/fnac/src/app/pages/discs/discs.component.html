@@ -1,1 +1,29 @@
-<p>discs works!</p>
+<div class="discs-component">
+        <h1 class="title">
+            <a class="link1" routerLink="/home">FNAC</a>
+        </h1>
+    <div class="discs-component__buttons">
+
+        <h2 class="home-component-text">
+            <button class="button"><a class="link" routerLink="/films">Films</a></button>
+        </h2>
+
+        <h2 class="home-component-text">
+            <button class="button"><a class="link" routerLink="/games">Games</a></button>
+        </h2>
+
+        <h2 class="home-component-text">
+            <button class="button"><a class="link" routerLink="/discs">Discs</a></button>
+        </h2>
+    </div>
+
+    <section class="discs-section">
+    <div class="discs-section__content" *ngFor="let disc of discs; let i = index;">
+
+        <h3>
+            <a routerLink="/Discs/{{ i }}">{{ disc.singer }}</a>
+        </h3>
+        
+    </div>
+    </section>
+</div>

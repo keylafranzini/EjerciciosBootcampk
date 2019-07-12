@@ -1,1 +1,31 @@
-<p>games works!</p>
+<div class="games-component">
+        <h1 class="title">
+            <a class="link1" routerLink="/home">FNAC</a>
+        </h1>
+    <div class="games-component__buttons">
+
+        <h2 class="home-component-text">
+            <button class="button"><a class="link" routerLink="/films">Films</a></button>
+        </h2>
+
+        <h2 class="home-component-text">
+            <button class="button"><a class="link" routerLink="/games">Games</a></button>
+        </h2>
+
+        <h2 class="home-component-text">
+            <button class="button"><a class="link" routerLink="/discs">Discs</a></button>
+        </h2>
+    </div>
+
+    <section class="games-section">
+    <div class="games-section__content" *ngFor="let game of games; let i = index;">
+
+        <h3>
+            <a routerLink="/Games/{{ i }}">{{ game.console }}</a>
+        </h3>
+
+        <p>{{ game.game }}</p>
+        
+    </div>
+    </section>
+</div>

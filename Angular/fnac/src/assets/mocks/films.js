@@ -13,29 +13,29 @@ export const films = [
     ]
   },
   {
-    "title": "Avengers: EndGame",
+    "title": "Spider-Man",
     "director": "Marvel",
-    "duration": 245,
+    "duration": 209,
     "year": 2019,
     "actors": [
-        "Chris Evans",
+        "Tom Holland",
         "Chris Hemsworth",
-        "Robert Downey",
-        "Scarlett Johansson",
-        "Brie Larson"
+        "Samuel Jackson",
+        "Jake Gyllenheal",
+        "Marisa Tomei"
     ]
   },
   {
-    "title": "Avengers: EndGame",
+    "title": "Captain Marvel",
     "director": "Marvel",
-    "duration": 245,
+    "duration": 203,
     "year": 2019,
     "actors": [
-        "Chris Evans",
-        "Chris Hemsworth",
-        "Robert Downey",
-        "Scarlett Johansson",
-        "Brie Larson"
+        "Brie Larson",
+        "Samuel Jackson",
+        "Jude Law",
+        "Annette Bening",
+        "Dijimon Hounsou"
     ]
   }
 ];

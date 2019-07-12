@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { films } from '../../../assets/mocks/films';
+import { IFilm } from '../../core/models/film.interface';
+
 
 @Component({
   selector: 'app-films',
@@ -7,8 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilmsComponent implements OnInit {
 
-  constructor() { 
+  public films: IFilm[];
 
+ 
+
+  constructor() { 
     this.films = films;
   }
 

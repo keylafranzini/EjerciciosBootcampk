@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { films } from '../../../../assets/mocks/films';
+import { IFilm } from '../../../../assets/mocks/films';
+
 
 @Component({
   selector: 'app-film',
@@ -7,7 +11,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilmComponent implements OnInit {
 
-  constructor() { }
+  public film: IFilm[];
+
+  constructor(private route: ActivatedRoute) { 
+    this.route.params.subscribe(params => {
+      console.log(params);
+      if (params && params.id){
+        this.film = films[params.id];
+      }
+    });
+  }
 
   ngOnInit() {
   }
