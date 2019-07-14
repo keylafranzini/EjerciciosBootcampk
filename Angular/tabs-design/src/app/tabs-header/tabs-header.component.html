@@ -1,7 +1,10 @@
 <div class="tabs-container">
     <div class="tabs-container__wrapper">
         <app-tab-items class="wrapper" *ngFor="let element of tabs" [title]="element.title" [body]="element.body"></app-tab-items>
-        <app-tab-arrow></app-tab-arrow>
+    </div>
+    <div class="app-tab-icon">
+        <span><i class="fas fa-angle-left"></i></span>
+        <span><i class="fas fa-angle-right"></i></span>
     </div>
     
 </div>

@@ -18,7 +18,9 @@ export class TabItemsComponent{
 
   clickOn(){
     this.opened = !this.opened;
-
   }
 
+  public changeState(){
+    this.opened = !this.opened;
+  }
 }
