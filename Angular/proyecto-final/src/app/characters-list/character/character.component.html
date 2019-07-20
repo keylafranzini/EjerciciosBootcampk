@@ -1,1 +1,12 @@
-<p>character works!</p>
+<div class="app-character">
+    <div class="app-character__content">
+        <img class="image" src="{{character.image}}" alt="">
+    </div>
+    <div class="app-character__text">
+        <ul class="app-character__text-ul">
+            <li class="link"><a class="name" [routerLink]="['/character-detail', character.name ]">{{character.name}}</a></li>
+            <li class="link"><span class="color">House: </span><a class="text" routerLink="/house/:id" routerLinkActive="active"> {{character.house}}</a></li>
+            <li class="link"><span class="color">Father: </span><a class="text" routerLink="" routerLinkActive="active">{{character.father}}</a></li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="app-tabs">
+    <div class="app-tabs__title" [ngClass]="{'app-tabs__title--opened': opened}" (click)="changeState()">
+        <h2 class="title">{{title}}</h2>
+        <span class="app-tabs__icon">
+            <i class="fas fa-chevron-down" [ngClass]="{'app-tabs__icon--opened': opened}" ></i>
+        </span>
+    </div>
+    <div class="app-tabs__items" [ngClass]="{'app-tabs__items--opened': opened}">
+        <ul class="app-tabs__items-ul">
+            <li class="app-tabs__items-li" *ngFor=" let item of list">{{item}}</li>
+        </ul>
+    </div>    
+</div>

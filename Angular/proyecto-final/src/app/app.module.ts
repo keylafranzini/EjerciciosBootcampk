@@ -12,6 +12,9 @@ import { HouseListComponent } from './house-list/house-list.component';
 import { HouseComponent } from './house-list/house/house.component';
 import { CharactersService } from './core/services/characters.service';
 import { HttpClientModule } from '@angular/common/http';
+import { HousesService } from './core/services/houses.service';
+import { CharacterDetailComponent } from './character-detail/character-detail.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +26,18 @@ import { HttpClientModule } from '@angular/common/http';
     CharacterComponent,
     HouseListComponent,
     HouseComponent,
-    HttpClientModule
+    CharacterDetailComponent,
+    TabsComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
-  providers: [CharactersService],
+  providers: [
+    CharactersService,
+    HousesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { IHouse } from 'src/app/core/models/houses.interface';
 
 @Component({
   selector: 'app-house',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./house.component.sass']
 })
 export class HouseComponent implements OnInit {
+
+  @Input() house: IHouse = null;
 
   constructor() { }
 

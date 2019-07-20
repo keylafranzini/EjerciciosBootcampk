@@ -1,0 +1,16 @@
+<div class="character-back">
+    <button class="back" (click)="backClicked()"><i class="fas fa-caret-left"></i>Back</button>
+</div>
+
+<div class="character-detail">
+    <div class="character-detail__image">
+        <img src="{{character.image}}" alt="actor">
+    </div>
+
+    <div class="character-detail__content">
+        <app-tabs [title]="'Titles'" [list]="character.titles"></app-tabs>
+        <app-tabs [title]="'allegiances'" [list]="character.allegiances"></app-tabs>
+        <app-tabs [title]="'siblings'" [list]="character.siblings"></app-tabs>
+        <app-tabs [title]="'appearances'" [list]="character.appearances"></app-tabs>
+    </div>
+</div>

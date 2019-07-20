@@ -1,1 +1,6 @@
-<p>house-list works!</p>
+<div class="app-house-list">
+   <div class="house-list" *ngFor="let house of houses">
+      <img class="image" src="{{house.logoURL}}" alt="">  
+      <a href=""><h4 class="name" >{{house.name}}</h4></a>
+   </div>
+</div>
