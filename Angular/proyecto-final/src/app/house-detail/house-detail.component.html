@@ -1,0 +1,18 @@
+<div class="house-back">
+    <button class="back" (click)="backClicked()"><i class="fas fa-caret-left"></i>Back</button>
+</div>
+
+<div class="house-detail">
+    <div class="house-detail__image">
+        <img class="image" src="{{house.logoURL}}" alt="actor">
+    </div>
+
+    <div class="house-detail__content">
+        <div class="text">{{house.name}}</div>
+        <h2 class="cont"><span class="detail">Words:</span> {{house.words}}</h2>
+        <app-tabs [title]="'seat'" [list]="house.seat"></app-tabs>
+        <app-tabs [title]="'region'" [list]="house.region"></app-tabs>
+        <app-tabs [title]="'allegiance'" [list]="house.allegiance"></app-tabs>
+        <app-tabs [title]="'religion'" [list]="house.religion"></app-tabs>
+    </div>
+</div>

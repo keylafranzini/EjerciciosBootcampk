@@ -4,10 +4,15 @@
 
 <div class="character-detail">
     <div class="character-detail__image">
-        <img src="{{character.image}}" alt="actor">
+        <img class="image" src="{{character.image}}" alt="actor">
+        <div class="character-detail__text">
+            <div class="text">{{character.name}}</div>
+        </div>
     </div>
 
     <div class="character-detail__content">
+        <h2 class="cont"><span class="detail">House:</span> {{character.house}}</h2>
+        <h2 class="cont"><span class="detail">Father:</span> {{character.father}}</h2>
         <app-tabs [title]="'Titles'" [list]="character.titles"></app-tabs>
         <app-tabs [title]="'allegiances'" [list]="character.allegiances"></app-tabs>
         <app-tabs [title]="'siblings'" [list]="character.siblings"></app-tabs>

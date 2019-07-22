@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { IHouse } from '../models/houses.interface';
+import { IHouse, IHouseDetail } from '../models/houses.interface';
 import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HousesService {
+
 
   private apiUrl = 'https://api.got.show/api/show/houses/';
   httpClient: any;
@@ -21,7 +22,7 @@ export class HousesService {
             const datosOther = [];
             // RECORRO EL DATA GUARDANDO SOLO LOS QUE TIENEN IMAGEN Y NOMBRE
             data.forEach((houses) => {
-              if(houses.logoURL && houses.name) {
+              if (houses.logoURL && houses.name) {
                 datosOther.push(houses);
               }
             });
@@ -30,5 +31,9 @@ export class HousesService {
         ),
       );
       return observableOther;
+    }
+
+    getHousesDetail(name: string): Observable<IHouseDetail> {
+      return this.http$.get<IHouseDetail>(this.apiUrl + name);
     }
 }

@@ -6,6 +6,7 @@ import { CharacterComponent } from './characters-list/character/character.compon
 import { HouseListComponent } from './house-list/house-list.component';
 import { HouseComponent } from './house-list/house/house.component';
 import { CharacterDetailComponent } from './character-detail/character-detail.component';
+import { HouseDetailComponent } from './house-detail/house-detail.component';
 
 
 const routes: Routes = [
@@ -26,6 +27,9 @@ const routes: Routes = [
   },
   {
     path: 'house', component: HouseComponent
+  },
+  {
+    path: 'house-detail/:housename', component: HouseDetailComponent
   },
   {
     path: '', pathMatch: 'full', redirectTo: '/home'

@@ -11,7 +11,7 @@ export class HouseListComponent implements OnInit {
 
   public houses: IHouse[] = [];
 
-  constructor(private houses$: HousesService) { 
+  constructor(private houses$: HousesService) {
   }
 
   ngOnInit() {

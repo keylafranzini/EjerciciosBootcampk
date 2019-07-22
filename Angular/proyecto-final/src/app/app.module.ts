@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HousesService } from './core/services/houses.service';
 import { CharacterDetailComponent } from './character-detail/character-detail.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { HouseDetailComponent } from './house-detail/house-detail.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { TabsComponent } from './tabs/tabs.component';
     HouseComponent,
     CharacterDetailComponent,
     TabsComponent,
+    HouseDetailComponent,
   ],
   imports: [
     BrowserModule,
